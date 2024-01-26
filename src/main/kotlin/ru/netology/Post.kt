@@ -7,10 +7,11 @@ data class Post(
     val fromId: Long,
     val createdBy: Long,
     val text: String,
-    val comments: Comments,
-    val copyright: Copyright,
+    val comments: Comments?,
+    val copyright: Copyright?,
     val likes: Likes,
     val canPin: Boolean,
-    val canDelete: Boolean
+    val canDelete: Boolean,
+    val attachments : Array<Attachment>? = emptyArray(),
 
 )
