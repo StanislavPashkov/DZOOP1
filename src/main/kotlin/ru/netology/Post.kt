@@ -12,6 +12,6 @@ data class Post(
     val likes: Likes,
     val canPin: Boolean,
     val canDelete: Boolean,
-    val attachments : Array<Attachment>? = emptyArray(),
+    val attachments: Array<Attachment>? = emptyArray(),
 
-)
+    )
